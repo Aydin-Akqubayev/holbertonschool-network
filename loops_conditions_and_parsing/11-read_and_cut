@@ -2,6 +2,6 @@
 #Test
 
 while IFS=: read -r username _ uid _ _ home_dir _; do
-	echo $username:$uid:$home_dir
+	echo "$username:$uid:$home_dir"
 
 done < /etc/passwd
