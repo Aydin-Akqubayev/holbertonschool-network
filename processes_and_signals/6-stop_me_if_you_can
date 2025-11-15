@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-#adsf
-pid=$(pgrep -f "4-to_infinity_and_beyond")
-[ -n "$pid" ] && kill -15 $pid || echo "Process not found"
+# Stop the process silently
+pkill -15 -f 4-to_infinity_and_beyond > /dev/null 2>&1
 
