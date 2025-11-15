@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-# Stop the process silently
-pkill -15 -f 4-to_infinity_and_beyond > /dev/null 2>&1
+# Stop all "4-to_infinity_and_beyond" processes of the current user using pkill
+pkill -u "$USER" -f "4-to_infinity_and_beyond"
+
