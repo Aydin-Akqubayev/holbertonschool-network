@@ -1,0 +1,13 @@
+#!/bin/bash
+while true; do
+	echo "salam" >> test
+	sleep 2
+done
+salam
+salam
+salam
+salam
+salam
+salam
+salam
+salam
