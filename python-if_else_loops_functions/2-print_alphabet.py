@@ -1,3 +1,4 @@
 #!/usr/bin/python3
-for char in range(97, 123):
-    print("{:c}".format(char), end="")
+
+for c in range(97, 123):  # ASCII kodları 97-122 arası 'a'-'z'
+    print("{}".format(chr(c)), end="")

@@ -1,20 +1,8 @@
 #!/usr/bin/python3
-import sys
-
-
-def main():
-
-    a = sys.argv[1:]
-    length = len(a)
-    i = 0
-    while i < len(a):
-        try:
-            a[i] = int(a[i])
-            i = i + 1
-        except Exception:
-            a.pop(i)
-    print(sum(a))
-
+from sys import argv
 
 if __name__ == "__main__":
-    main()
+    total = 0
+    for arg in argv[1:]:
+        total += int(arg)
+    print(total)

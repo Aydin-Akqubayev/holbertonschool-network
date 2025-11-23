@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-for char in range(97, 123):
-    if char == ord('q') or char == ord('e'):
-        continue
-    else:
-        print("{:c}".format(char), end="")
+
+for c in range(97, 123):
+    if c != 101 and c != 113:
+        print("{}".format(chr(c)), end="")

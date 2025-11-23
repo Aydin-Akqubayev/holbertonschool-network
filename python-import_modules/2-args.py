@@ -1,20 +1,16 @@
 #!/usr/bin/python3
-import sys
-
-
-def main():
-    list_command = sys.argv
-    length = len(list_command)
-    if length - 1 > 1:
-        print("{} arguments:".format(length - 1))
-    elif length - 1 == 0:
-        print("{} arguments.".format(length - 1))
-    else:
-        print("{} argument:".format(length - 1))
-    for i in range(1, length):
-        print("{}: {}".format(i, list_command[i]))
-
+from sys import argv
 
 if __name__ == "__main__":
-    main()
-    
+    argc = len(argv) - 1  # argv[0] is the script name
+
+    if argc == 0:
+        print("0 arguments.")
+    else:
+        if argc == 1:
+            print("1 argument:")
+        else:
+            print("{} arguments:".format(argc))
+
+        for i in range(1, len(argv)):
+            print("{}: {}".format(i, argv[i]))
